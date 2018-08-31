@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    long int N,Ri,i;
+    unsigned char rep[100001]={0};
+    scanf("%ld",&N);
+    for(i=0;i<N;i++) {
+        scanf("%ld",&Ri);
+        rep[Ri]++;
+    }
+    for(i=1;i<=N;i++) {
+        if(rep[i]==0)
+           printf("%ld ",i);
+    }
+    return 0;
+}
